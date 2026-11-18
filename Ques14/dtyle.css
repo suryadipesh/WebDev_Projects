@@ -1,0 +1,64 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Times New Roman', serif;
+    font-size: 1rem;
+    overflow-x: hidden;
+}
+h1 {
+    background-color: gray;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+}
+.links{
+    background-color: black;
+    height: 50px;
+    width: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+}
+.links a{
+    color: white;
+    text-decoration: none;
+    padding: 1rem;
+    width: 100%;
+}
+.cont{
+    border: 2px solid black;
+    width: 90%;
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    height: auto;
+    gap: 1rem;
+    padding: 1rem;
+    margin: 10px;
+}
+.cards{
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid gray;
+    text-align: center;
+}
+.iflex{
+    display: flex;
+    justify-content: center ;
+}
+.imgs {
+    max-width: 100%;
+    height: auto;
+    width: 151px;
+}
+.foot{
+    width: 100%;
+    padding: 1rem;
+    background-color: grey;
+    flex-direction: column;
+    gap: 1rem;
+    text-align: center;
+}
