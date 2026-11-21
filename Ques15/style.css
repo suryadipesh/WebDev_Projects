@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    background-color: wheat;
+    width: 320px;
+    padding: 10px;
+}
+nav{
+    background-color: lightgrey;
+    color: wheat;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 320px;
+}
+.links a{
+    color: black;
+    text-decoration: none;
+}
+.mtext{
+    margin: 10px ;
+    border: 2px solid black;
+    width: 300px;
+}
+.box1{
+    width: 300px;
+    margin: 10px;
+    height: 150px;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.boxs{
+    width: 300px;
+    margin: 10px;
+    height: 150px;
+    border: 2px solid grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer{
+    background-color: wheat;
+    width: 320px;
+    height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+@media (min-width: 600px){
+    .box1{
+        width: 580px;
+    }
+    header{
+        width: 600px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    nav{
+        width: 600px;
+    }
+    .boxs{
+        width: 280px;
+    }
+    .grid{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+        width: 600px;
+    }
+    footer{
+        width: 600px;
+    }
+
+}
+@media (min-width: 900px){
+    header{
+        width: 900px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        grid-area: head;
+    }
+    nav{
+        grid-area: nav;
+    }
+    .box1{
+        grid-area: box;
+    }
+    footer{
+        width: 900px;
+        grid-area: foot;
+    }
+    .boxs{
+        grid-area: card;
+    }
+    nav{
+    background-color: lightgrey;
+    color: wheat;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    
+    width: 320px;
+    height: 150px;
+    }
+    /* .grid{
+        display: grid;
+        grid-template-rows:1fr;
+        grid-template-columns: 1fr 1fr 1fr;
+        width: 600px;
+    } */
+    .page{
+        display: grid;
+        width: 100%;
+        grid-template-areas:
+        "head head head"
+        "nav box box"
+        "card card card"
+        "foot foot foot"
+    }
+
+}
