@@ -24,7 +24,7 @@ body{
     color: white;
     width: 70%;
     border-radius: 5px;
-    animation-iteration-count: infinite;
+    
     white-space: nowrap;
     overflow: hidden;
     margin: 20px;
@@ -39,10 +39,10 @@ h2{
 }
 p{
     margin-left: 50%;
-    animation-name: move;
-    animation-duration: 0.8s;
+    animation: scrollText 8s linear infinite;
+    animation-duration: 5s;
 }
-@keyframes move{
+@keyframes scrollText{
     from{
         margin-left: 100%;
     }
