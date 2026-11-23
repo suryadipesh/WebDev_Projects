@@ -1,0 +1,57 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #FFFDD0;
+}
+.Heading{
+    color: coral;
+    height: 80px;
+    background-color: wheat;
+    border-bottom: 2px solid coral;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+}
+.container{
+    background-color: lightgray;
+    border: 1px solid rgba(255,255,255,0.129);
+    font-size: 40px;
+    padding: 10px;
+    color: white;
+    width: 70%;
+    border-radius: 5px;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    margin: 20px;
+}
+h2{
+    margin: 20px;
+    border: 2px solid black;
+    width: 150px;
+    height: 35px;
+    padding: 3px;
+    padding-left: 4px;
+}
+p{
+    margin-left: 50%;
+    animation-name: move;
+    animation-duration: 0.8s;
+}
+@keyframes move{
+    from{
+        margin-left: 100%;
+    }
+    to{
+        margin-left: 0%;
+    }
+}
+h2:hover{
+    color: white;
+    box-shadow: 5px 5px 5px grey;
+    background-color: black;
+}
