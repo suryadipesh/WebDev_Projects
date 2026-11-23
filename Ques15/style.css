@@ -92,6 +92,8 @@ footer{
     }
     .box1{
         grid-area: box;
+        width: 570px;
+        height: 140px;
     }
     footer{
         width: 900px;
@@ -101,23 +103,18 @@ footer{
         grid-area: card;
     }
     nav{
-    background-color: lightgrey;
-    color: wheat;
-    padding: 10px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    
-    width: 320px;
-    height: 150px;
+        background-color: lightgrey;
+        color: wheat;
+        padding: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        margin: 10px;
+        width: 300px;
+        height: 140px;
+        border: 2px solid black;
     }
-    /* .grid{
-        display: grid;
-        grid-template-rows:1fr;
-        grid-template-columns: 1fr 1fr 1fr;
-        width: 600px;
-    } */
     .page{
         display: grid;
         width: 100%;
